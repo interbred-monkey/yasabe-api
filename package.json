@@ -1,0 +1,31 @@
+{
+  "name": "yasabe-api",
+  "description": "Yasabe API node.js module",
+  "keywords": [
+    "yasabe",
+    "api"
+  ],
+  "homepage": "https://github.com/interbred-monkey/yasabe-api",
+  "bugs": {
+    "url": "https://github.com/interbred-monkey/yasabe-api/issues"
+  },
+  "author": {
+    "name": "Simon Mudd"
+  },
+  "version": "0.0.1",
+  "licenses": [
+    {
+      "type": "BSC"
+    }
+  ],
+  "main": "yasabe",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/interbred-monkey/yasabe-api.git"
+  },
+  "dependencies": {
+    "request": "2.33.0",
+    "underscore": "1.5.2"
+  },
+  "readmeFilename": "README.md"
+}
