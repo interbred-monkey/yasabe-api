@@ -22,18 +22,18 @@ var yasabe = new Yasabe(username, password);
 
 ### Using Debug mode
 
-The debug mode is set to false by default
+The debug mode is set to false by default, when switched on the API parameters will be logged out along with the API call that is being called and the response.
 
 ```javascript
-yasabe.debugMode(true/false);
+yasabe.debugMode(true);
 ```
 
 ### Using Test mode
 
-Test mode is set to false by default
+Test mode is set to false by default, when switched on the module will use the YaSabe development environment to stop test data being added to the actual database.
 
 ```javascript
-yasabe.testMode(true/false);
+yasabe.testMode(true);
 ```
 
 ### Pulling records
