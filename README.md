@@ -43,7 +43,7 @@ The parameters for a search are as follows:
 ---
 
 `terms` - fielded value to search for  
-  'where' - location name (city, state, zipcode, (latitude, longitude))  
+  `where` - location name (city, state, zipcode, (latitude, longitude))  
   `distance` - distance radius from center location  
   `page` - page number  
   `size` - number of items per page  
