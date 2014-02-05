@@ -4,8 +4,7 @@ A simple Node.JS wrapper around the YaSabe business directory API
 
 ## Installation
 
-YaSabe API is available through an installation from npm  
-  [yasabe-api](https://npmjs.org/package/yasabe-api)
+[yasabe-api](https://npmjs.org/package/yasabe-api) is available through an installation from npm.
 
 ```javascript
 npm install yasabe-api
