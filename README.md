@@ -1,4 +1,4 @@
-# YaSabe API
+# About
 
 A simple Node.JS wrapper around the YaSabe business directory API
 
@@ -11,14 +11,14 @@ YaSabe API is available through an installation from npm
 npm install yasabe-api
 ```
 
+## Usage
+
 To use this library simply require the file and create a new instance of the module like so:
 
 ```javascript
 var Yasabe = require('yasabe-api');
 var yasabe = new Yasabe(username, password);
 ```
-
-## Usage
 
 ### Using Debug mode
 
