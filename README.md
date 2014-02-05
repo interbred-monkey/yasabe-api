@@ -43,10 +43,15 @@ The parameters for a search are as follows:
 ---
 
 terms: fielded value to search for 
+
 where: location name (city, state, zipcode, (latitude, longitude))
+
 distance: distance radius from center location 
+
 page: page number 
+
 size: number of items per page 
+
 sort: relevance, distance, buzz, authenticity, alpha, index, social, random
 
 ---
@@ -77,9 +82,13 @@ Parameters for adding a record are as follows:
 ---
 
 source: *your* content source identifier 
+
 externalid: the id you know this record as
+
 businessMatches: one or more listing id corresponding to YaSabe record/s to be updated 
+
 businessContent: content to make available in YaSabe
+
 additionalContent: free text content to make available in YaSabe
 
 ---
@@ -219,4 +228,5 @@ yasabe.delete(yasabe_params, function(err, data) {
 ## Third-party libraries
 
 [request](http://github.com/mikeal/request.git)
+
 [underscore](http://underscorejs.org)
