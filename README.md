@@ -130,6 +130,7 @@ yasabe_params.business_content = {
   latitude: 34.0731,
   longitude: 118.3994,
   description: "Some text description",
+  videoURL: "http://youtu.be/IqG1l4lScsg",
   facebook: "http://www.facebook.com/axel-foley",
   twitter: "http://www.twitter.com/axelf",
   phones: [
