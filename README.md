@@ -2,14 +2,14 @@
 
 A simple Node.JS wrapper around the YaSabe business directory API
 
+## Installation
+
 YaSabe API is available through an installation from npm
 [yasabe-api](https://npmjs.org/package/yasabe-api)
 
 ```javascript
 npm install yasabe-api
 ```
-
-# Include
 
 To use this library simply require the file and create a new instance of the module like so:
 
@@ -18,9 +18,9 @@ var Yasabe = require('yasabe-api');
 var yasabe = new Yasabe(username, password);
 ```
 
-# Usage
+## Usage
 
-## Using Debug mode
+### Using Debug mode
 
 The debug mode is set to false by default
 
@@ -28,7 +28,7 @@ The debug mode is set to false by default
 yasabe.debugMode(true/false);
 ```
 
-## Using Test mode
+### Using Test mode
 
 Test mode is set to false by default
 
@@ -36,7 +36,7 @@ Test mode is set to false by default
 yasabe.testMode(true/false);
 ```
 
-## Pulling records
+### Pulling records
 
 The parameters for a search are as follows:
 
@@ -65,10 +65,10 @@ yasabe.search(search_params, function(err, search_results) {
 
   console.log(err, search_results);
 
-});
+})
 ```
 
-## Adding records
+### Adding records
 
 Parameters for adding a record are as follows:
 
@@ -190,11 +190,11 @@ yasabe.post(yasabe_params, function(err, data) {
 })
 ```
 
-## Updating a record
+### Updating a record
 
 Updating a record is just the same as adding a record but you must pass in the YaSabe id you wish to update in the businessMatches array. This ID can be attained by a simple search.
 
-## Deleting a record
+### Deleting a record
 
 Deleteing a record requires the basic parameters for adding or updating but nothing else. An example of this would be:
 
