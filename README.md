@@ -42,17 +42,17 @@ The parameters for a search are as follows:
 
 ---
 
-terms: fielded value to search for 
+`terms` - fielded value to search for 
 
-where: location name (city, state, zipcode, (latitude, longitude))
+'where' - location name (city, state, zipcode, (latitude, longitude))
 
-distance: distance radius from center location 
+`distance` - distance radius from center location 
 
-page: page number 
+`page` - page number 
 
-size: number of items per page 
+`size` - number of items per page 
 
-sort: relevance, distance, buzz, authenticity, alpha, index, social, random
+`sort` - relevance, distance, buzz, authenticity, alpha, index, social, random
 
 ---
 
@@ -81,15 +81,11 @@ Parameters for adding a record are as follows:
 
 ---
 
-source: *your* content source identifier 
-
-externalid: the id you know this record as
-
-businessMatches: one or more listing id corresponding to YaSabe record/s to be updated 
-
-businessContent: content to make available in YaSabe
-
-additionalContent: free text content to make available in YaSabe
+`source` - *your* content source identifier 
+  `externalid` - the id you know this record as  
+  `businessMatches` - one or more listing id corresponding to YaSabe record/s to be updated  
+  `businessContent` - content to make available in YaSabe  
+  `additionalContent` - free text content to make available in YaSabe  
 
 ---
 
@@ -205,7 +201,7 @@ yasabe.post(yasabe_params, function(err, data) {
 
 ### Updating a record
 
-Updating a record is just the same as adding a record but you must pass in the YaSabe id you wish to update in the businessMatches array. This ID can be attained by a simple search.
+Updating a record is just the same as `post()` but you must pass in the YaSabe id you wish to update in the businessMatches array. This ID can be attained by a simple search.
 
 ### Deleting a record
 
