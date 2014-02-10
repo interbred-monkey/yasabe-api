@@ -115,10 +115,10 @@ var yasabe_params = {
   source: "cops ride along directorate"
 }
 
-yasabe_params.business_content = {
+yasabe_params.businessContent = {
   language: [2],
   stdname: "Axel Foley",
-  tagline: "Ride along with a cop"
+  tagline: "Ride along with a cop",
   addressline1: "1154 Summit Dr",
   addressline2: "",
   city_text: "Beverly Hills",
@@ -151,7 +151,7 @@ yasabe_params.business_content = {
   ]
 }
 
-yasabe_params.additional_content = [
+yasabe_params.additionalContent = [
   {
     id: "images",
     type: "content",
