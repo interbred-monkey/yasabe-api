@@ -34,10 +34,10 @@ var YaSabe = function(_username, _password, _key) {
 }
 
 // do we want to operate in test mode?
-YaSabe.prototype.test_mode = false;
+YaSabe.prototype._test_mode = false;
 
 // do we want to put out some debug?
-YaSabe.prototype.debug = false;
+YaSabe.prototype._debug = false;
 
 // username
 YaSabe.prototype._username = null;
@@ -151,7 +151,7 @@ YaSabe.prototype.doRequest = function(params, callback) {
   }
 
   // add in the stub for the api
-  params.url = "http://api."+(this.test_mode?"dev.":"")+"yasabe.com/search"+params.url;
+  params.url = "http://api."+(this._test_mode?"dev.":"")+"yasabe.com/search"+params.url;
 
   // add in the api key for a post
   if (params.method === "POST" || params.method === "PUT") {
@@ -179,11 +179,14 @@ YaSabe.prototype.doRequest = function(params, callback) {
     sendImmediately: false
   }
 
+  // debug mode
+  var _debug_mode = this._debug;
+
   // do the request
   request(params, function(e, r, b) {
 
     // output some debug
-    if (this.debug === true) {
+    if (_debug_mode === true) {
 
       console.log("****************************************************");
       console.log("** Parameters **");
@@ -225,15 +228,15 @@ YaSabe.prototype.doRequest = function(params, callback) {
 // turn on/off debug
 YaSabe.prototype.setDebugMode = function(bool) {
 
-  return this.debug = Boolean(bool);
+  return this._debug = Boolean(bool);
 
 }
 
 // turn on/off test mode
 YaSabe.prototype.setTestMode = function(bool) {
 
-  return this.test_mode = Boolean(bool);
-
+  return this._test_mode = Boolean(bool);
+  
 }
 
 module.exports = YaSabe;
