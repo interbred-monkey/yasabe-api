@@ -117,10 +117,10 @@ var yasabe_params = {
 
 yasabe_params.businessContent = {
   language: [2],
-  stdname: "Axel Foley",
+  businessname: "Axel Foley",
   tagline: "Ride along with a cop",
-  addressline1: "1154 Summit Dr",
-  addressline2: "",
+  address1: "1154 Summit Dr",
+  address2: "",
   city_text: "Beverly Hills",
   province: "Los Angeles",
   state: "CA",
@@ -134,14 +134,14 @@ yasabe_params.businessContent = {
   twitter: "http://www.twitter.com/axelf",
   phones: [
     {
-      phoneNum: 7039554747,
+      number: 7039554747,
       type: "Primary"
     }
   ],
-  email: [
+  emails: [
     "axelfoley@lapd.com"
   ],
-  url: [
+  urls: [
     "http://www.axels-super-adventures.com"
   ],
   cat: [
