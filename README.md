@@ -153,8 +153,8 @@ yasabe_params.businessContent = {
 
 yasabe_params.additionalContent = [
   {
-    id: "images",
-    type: "content",
+    id: "content",
+    type: "google-content",
     items: [
       {
         type: "GALLERY",
@@ -163,13 +163,7 @@ yasabe_params.additionalContent = [
       {
         type: "LOGO",
         id: "http://imgur.com/VWJvqVA"
-      }
-    ]
-  },
-  {
-    id: "common",
-    type: "content",
-    items: [
+      },
       {
         type: "tag",
         english: "drug busts"
@@ -179,9 +173,21 @@ yasabe_params.additionalContent = [
         english: "ride along"
       },
       {
-        type: "hoursText",
-        english: "M-F 9am-5pm, Sa-Su Closed",
-        id: "display"
+        type: "price",
+        english: "$$$"
+      },
+      {
+        type: "rating",
+        english: "4.3"
+      },
+      {
+        type: "hours",
+        english: "mon-fri 9am to 5pm"
+      },
+      {
+        type: "category",
+        english: "Car Dealers",
+        spanish: "Car Dealers"
       }
     ]
   }
