@@ -148,13 +148,14 @@ yasabe_params.businessContent = {
     {
       id: 228000000
     }
-  ]
+  ],
+  tags: ["cops","ride along","drugs bust"]
 }
 
 yasabe_params.additionalContent = [
   {
-    id: "content",
-    type: "google-content",
+    id: "images",
+    type: "multimedia",
     items: [
       {
         type: "GALLERY",
@@ -163,31 +164,38 @@ yasabe_params.additionalContent = [
       {
         type: "LOGO",
         id: "http://imgur.com/VWJvqVA"
-      },
-      {
-        type: "tag",
-        english: "drug busts"
-      },
-      {
-        type: "tag",
-        english: "ride along"
-      },
+      }
+    ]
+  },
+  {
+    id: "price-hours",
+    type: "content",
+    items: [
       {
         type: "price",
-        english: "$$$"
-      },
-      {
-        type: "rating",
-        english: "4.3"
+        english: "$$$",
+        id: "display"
       },
       {
         type: "hours",
-        english: "mon-fri 9am to 5pm"
+        english: "mon-fri 9am to 5pm",
+        id: "display"
+      },
+    ]
+  },
+  {
+    id: "user-generated-1",
+    type: "review",
+    items: [
+      {
+        type: "rating",
+        english: "4.3",
+        id: "display"
       },
       {
-        type: "category",
-        english: "Car Dealers",
-        spanish: "Car Dealers"
+        type: "review",
+        english: "Very nice place",
+        id: "display"
       }
     ]
   }
